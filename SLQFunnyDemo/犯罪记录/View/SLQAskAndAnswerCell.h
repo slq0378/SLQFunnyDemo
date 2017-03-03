@@ -13,9 +13,9 @@
 @property (nonatomic,strong) SLQAskAndAnswerModel *askAndAnswerModel;
 
 ///提问view
-@property (nonatomic, strong) UILabel  *ask;
+@property (nonatomic, strong) UIButton  *ask;
 /**回答view*/
-@property (nonatomic, strong) UILabel *answer;
+@property (nonatomic, strong) UIButton *answer;
 
 ///提问背景view
 @property (nonatomic, strong) UIView  *askBackground;

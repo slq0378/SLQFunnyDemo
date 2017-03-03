@@ -15,12 +15,15 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
-        UILabel *ask = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 30, 44)];
-        ask.text = @"问:";
-        ask.font = [UIFont boldSystemFontOfSize:FontSize];
+        UIButton *ask = [[UIButton alloc] initWithFrame:CGRectMake(10, 0, 44, 44)];
+//        ask.titleLabel.text = @"问:";
+        [ask setTitle:@"问:" forState:UIControlStateNormal];
+        [ask setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [ask setImage:[UIImage imageNamed:@"icon1"] forState:UIControlStateNormal];
+        ask.titleLabel.font = [UIFont boldSystemFontOfSize:FontSize];
         [self.contentView addSubview:ask];
         self.ask = ask;
-        self.askBackground = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.ask.frame), ask.frame.origin.y, ScreenWidth - CGRectGetMaxX(self.ask.frame)-10, 50)];
+        self.askBackground = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.ask.frame) + 5, ask.frame.origin.y, ScreenWidth - CGRectGetMaxX(self.ask.frame)-15, 50)];
         self.askBackground.backgroundColor = RGBCOLOR(248, 248, 248);
         self.askBackground.layer.masksToBounds = YES;
         self.askBackground.layer.cornerRadius = 8;
@@ -38,14 +41,17 @@
 //        askLab.layer.borderColor = [UIColor grayColor].CGColor;
         
         
-        UILabel *answer = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 40, CGRectGetMaxX(self.askLab.frame) + 5, 30, 44)];
-        answer.text = @":答";
-        answer.textAlignment = NSTextAlignmentRight;
-        answer.font = [UIFont boldSystemFontOfSize:FontSize];
+        UIButton *answer = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 54, CGRectGetMaxY(self.askLab.frame) + 5, 44, 44)];
+//        answer.titleLabel.text = @":答";
+        [answer setTitle:@":答" forState:UIControlStateNormal];
+        [answer setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [answer setImage:[UIImage imageNamed:@"icon2"] forState:UIControlStateNormal];
+        answer.titleLabel.textAlignment = NSTextAlignmentRight;
+        answer.titleLabel.font = [UIFont boldSystemFontOfSize:FontSize];
         [self.contentView addSubview:answer];
         self.answer = answer;
         
-        self.answerBackground = [[UIView alloc] initWithFrame:CGRectMake(30, answer.frame.origin.y, ScreenWidth - 40-30, 50)];
+        self.answerBackground = [[UIView alloc] initWithFrame:CGRectMake(54, answer.frame.origin.y, ScreenWidth - 54 - 50 - 5, 50)];
         self.answerBackground.backgroundColor = RGBCOLOR(156, 253, 11);
         self.answerBackground.layer.masksToBounds = YES;
         self.answerBackground.layer.cornerRadius = 8;
@@ -80,12 +86,12 @@
     CGSize size2 = [self sizeString:self.answerLab.text WithFont:[UIFont systemFontOfSize:FontSize] constrainedToSize:CGSizeMake(self.answerLab.frame.size.width , MAXFLOAT)];
     
     NSLog(@"");
-    self.ask.frame = CGRectMake(10, 0, 30, 44);
+    self.ask.frame = CGRectMake(10, 0, 44, 44);
     self.askBackground.frame =  CGRectMake(CGRectGetMaxX(self.ask.frame), self.ask.frame.origin.y, self.askBackground.frame.size.width, (size1.height) > 44 ?size1.height + 10:44 + 10);
     self.askLab.frame = CGRectMake(self.askBackground.frame.origin.x + 5, self.askBackground.frame.origin.y + 5, self.askBackground.frame.size.width - 10, (size1.height) > 44 ?size1.height :44);
     
-    self.answer.frame = CGRectMake(ScreenWidth - 44, CGRectGetMaxY(self.askBackground.frame) + 5, 30, 44);
-    self.answerBackground.frame =  CGRectMake(30, self.answer.frame.origin.y, self.answerBackground.frame.size.width, (size2.height) > 44 ?size2.height + 10:44+10);
+    self.answer.frame = CGRectMake(ScreenWidth - 54, CGRectGetMaxY(self.askBackground.frame) + 5, 44, 44);
+    self.answerBackground.frame =  CGRectMake(54, self.answer.frame.origin.y, self.answerBackground.frame.size.width, (size2.height) > 44 ?size2.height + 10:44+10);
     self.answerLab.frame = CGRectMake(self.answerBackground.frame.origin.x + 5 , self.answerBackground.frame.origin.y + 5, self.answerBackground.frame.size.width - 10, (size2.height) > 44 ?size2.height:44);
 
     
