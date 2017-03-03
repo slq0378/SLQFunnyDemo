@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4C87A701E6949A400ACA1E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C87A6F1E6949A400ACA1E4 /* main.m */; };
+		E4C87A731E6949A400ACA1E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C87A721E6949A400ACA1E4 /* AppDelegate.m */; };
+		E4C87A761E6949A400ACA1E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C87A751E6949A400ACA1E4 /* ViewController.m */; };
+		E4C87A791E6949A400ACA1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C87A771E6949A400ACA1E4 /* Main.storyboard */; };
+		E4C87A7C1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4C87A7A1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodeld */; };
+		E4C87A7E1E6949A400ACA1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C87A7D1E6949A400ACA1E4 /* Assets.xcassets */; };
+		E4C87A811E6949A400ACA1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C87A7F1E6949A400ACA1E4 /* LaunchScreen.storyboard */; };
+		E4C87A8C1E6949A400ACA1E4 /* SLQFunnyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C87A8B1E6949A400ACA1E4 /* SLQFunnyDemoTests.m */; };
+		E4C87A971E6949A400ACA1E4 /* SLQFunnyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C87A961E6949A400ACA1E4 /* SLQFunnyDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4C87A881E6949A400ACA1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4C87A631E6949A300ACA1E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4C87A6A1E6949A400ACA1E4;
+			remoteInfo = SLQFunnyDemo;
+		};
+		E4C87A931E6949A400ACA1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4C87A631E6949A300ACA1E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4C87A6A1E6949A400ACA1E4;
+			remoteInfo = SLQFunnyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4C87A6B1E6949A400ACA1E4 /* SLQFunnyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLQFunnyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C87A6F1E6949A400ACA1E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4C87A711E6949A400ACA1E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4C87A721E6949A400ACA1E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4C87A741E6949A400ACA1E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4C87A751E6949A400ACA1E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4C87A781E6949A400ACA1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4C87A7B1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SLQFunnyDemo.xcdatamodel; sourceTree = "<group>"; };
+		E4C87A7D1E6949A400ACA1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4C87A801E6949A400ACA1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4C87A821E6949A400ACA1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C87A871E6949A400ACA1E4 /* SLQFunnyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLQFunnyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C87A8B1E6949A400ACA1E4 /* SLQFunnyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLQFunnyDemoTests.m; sourceTree = "<group>"; };
+		E4C87A8D1E6949A400ACA1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C87A921E6949A400ACA1E4 /* SLQFunnyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLQFunnyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C87A961E6949A400ACA1E4 /* SLQFunnyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLQFunnyDemoUITests.m; sourceTree = "<group>"; };
+		E4C87A981E6949A400ACA1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4C87A681E6949A400ACA1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C87A841E6949A400ACA1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C87A8F1E6949A400ACA1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4C87A621E6949A300ACA1E4 = {
+			isa = PBXGroup;
+			children = (
+				E4C87A6D1E6949A400ACA1E4 /* SLQFunnyDemo */,
+				E4C87A8A1E6949A400ACA1E4 /* SLQFunnyDemoTests */,
+				E4C87A951E6949A400ACA1E4 /* SLQFunnyDemoUITests */,
+				E4C87A6C1E6949A400ACA1E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4C87A6C1E6949A400ACA1E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4C87A6B1E6949A400ACA1E4 /* SLQFunnyDemo.app */,
+				E4C87A871E6949A400ACA1E4 /* SLQFunnyDemoTests.xctest */,
+				E4C87A921E6949A400ACA1E4 /* SLQFunnyDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4C87A6D1E6949A400ACA1E4 /* SLQFunnyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E4C87A711E6949A400ACA1E4 /* AppDelegate.h */,
+				E4C87A721E6949A400ACA1E4 /* AppDelegate.m */,
+				E4C87A741E6949A400ACA1E4 /* ViewController.h */,
+				E4C87A751E6949A400ACA1E4 /* ViewController.m */,
+				E4C87A771E6949A400ACA1E4 /* Main.storyboard */,
+				E4C87A7D1E6949A400ACA1E4 /* Assets.xcassets */,
+				E4C87A7F1E6949A400ACA1E4 /* LaunchScreen.storyboard */,
+				E4C87A821E6949A400ACA1E4 /* Info.plist */,
+				E4C87A7A1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodeld */,
+				E4C87A6E1E6949A400ACA1E4 /* Supporting Files */,
+			);
+			path = SLQFunnyDemo;
+			sourceTree = "<group>";
+		};
+		E4C87A6E1E6949A400ACA1E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4C87A6F1E6949A400ACA1E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4C87A8A1E6949A400ACA1E4 /* SLQFunnyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4C87A8B1E6949A400ACA1E4 /* SLQFunnyDemoTests.m */,
+				E4C87A8D1E6949A400ACA1E4 /* Info.plist */,
+			);
+			path = SLQFunnyDemoTests;
+			sourceTree = "<group>";
+		};
+		E4C87A951E6949A400ACA1E4 /* SLQFunnyDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4C87A961E6949A400ACA1E4 /* SLQFunnyDemoUITests.m */,
+				E4C87A981E6949A400ACA1E4 /* Info.plist */,
+			);
+			path = SLQFunnyDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4C87A6A1E6949A400ACA1E4 /* SLQFunnyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4C87A9B1E6949A400ACA1E4 /* Build configuration list for PBXNativeTarget "SLQFunnyDemo" */;
+			buildPhases = (
+				E4C87A671E6949A400ACA1E4 /* Sources */,
+				E4C87A681E6949A400ACA1E4 /* Frameworks */,
+				E4C87A691E6949A400ACA1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLQFunnyDemo;
+			productName = SLQFunnyDemo;
+			productReference = E4C87A6B1E6949A400ACA1E4 /* SLQFunnyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4C87A861E6949A400ACA1E4 /* SLQFunnyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4C87A9E1E6949A400ACA1E4 /* Build configuration list for PBXNativeTarget "SLQFunnyDemoTests" */;
+			buildPhases = (
+				E4C87A831E6949A400ACA1E4 /* Sources */,
+				E4C87A841E6949A400ACA1E4 /* Frameworks */,
+				E4C87A851E6949A400ACA1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4C87A891E6949A400ACA1E4 /* PBXTargetDependency */,
+			);
+			name = SLQFunnyDemoTests;
+			productName = SLQFunnyDemoTests;
+			productReference = E4C87A871E6949A400ACA1E4 /* SLQFunnyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4C87A911E6949A400ACA1E4 /* SLQFunnyDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4C87AA11E6949A400ACA1E4 /* Build configuration list for PBXNativeTarget "SLQFunnyDemoUITests" */;
+			buildPhases = (
+				E4C87A8E1E6949A400ACA1E4 /* Sources */,
+				E4C87A8F1E6949A400ACA1E4 /* Frameworks */,
+				E4C87A901E6949A400ACA1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4C87A941E6949A400ACA1E4 /* PBXTargetDependency */,
+			);
+			name = SLQFunnyDemoUITests;
+			productName = SLQFunnyDemoUITests;
+			productReference = E4C87A921E6949A400ACA1E4 /* SLQFunnyDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4C87A631E6949A300ACA1E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = song;
+				TargetAttributes = {
+					E4C87A6A1E6949A400ACA1E4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L76K5AFQYD;
+						ProvisioningStyle = Automatic;
+					};
+					E4C87A861E6949A400ACA1E4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L76K5AFQYD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4C87A6A1E6949A400ACA1E4;
+					};
+					E4C87A911E6949A400ACA1E4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L76K5AFQYD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E4C87A6A1E6949A400ACA1E4;
+					};
+				};
+			};
+			buildConfigurationList = E4C87A661E6949A300ACA1E4 /* Build configuration list for PBXProject "SLQFunnyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4C87A621E6949A300ACA1E4;
+			productRefGroup = E4C87A6C1E6949A400ACA1E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4C87A6A1E6949A400ACA1E4 /* SLQFunnyDemo */,
+				E4C87A861E6949A400ACA1E4 /* SLQFunnyDemoTests */,
+				E4C87A911E6949A400ACA1E4 /* SLQFunnyDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4C87A691E6949A400ACA1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C87A811E6949A400ACA1E4 /* LaunchScreen.storyboard in Resources */,
+				E4C87A7E1E6949A400ACA1E4 /* Assets.xcassets in Resources */,
+				E4C87A791E6949A400ACA1E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C87A851E6949A400ACA1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C87A901E6949A400ACA1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4C87A671E6949A400ACA1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C87A761E6949A400ACA1E4 /* ViewController.m in Sources */,
+				E4C87A731E6949A400ACA1E4 /* AppDelegate.m in Sources */,
+				E4C87A7C1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodeld in Sources */,
+				E4C87A701E6949A400ACA1E4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C87A831E6949A400ACA1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C87A8C1E6949A400ACA1E4 /* SLQFunnyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C87A8E1E6949A400ACA1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C87A971E6949A400ACA1E4 /* SLQFunnyDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4C87A891E6949A400ACA1E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4C87A6A1E6949A400ACA1E4 /* SLQFunnyDemo */;
+			targetProxy = E4C87A881E6949A400ACA1E4 /* PBXContainerItemProxy */;
+		};
+		E4C87A941E6949A400ACA1E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4C87A6A1E6949A400ACA1E4 /* SLQFunnyDemo */;
+			targetProxy = E4C87A931E6949A400ACA1E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4C87A771E6949A400ACA1E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4C87A781E6949A400ACA1E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4C87A7F1E6949A400ACA1E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4C87A801E6949A400ACA1E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4C87A991E6949A400ACA1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4C87A9A1E6949A400ACA1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4C87A9C1E6949A400ACA1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L76K5AFQYD;
+				INFOPLIST_FILE = SLQFunnyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.songliquan.github.SLQFunnyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4C87A9D1E6949A400ACA1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L76K5AFQYD;
+				INFOPLIST_FILE = SLQFunnyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.songliquan.github.SLQFunnyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E4C87A9F1E6949A400ACA1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L76K5AFQYD;
+				INFOPLIST_FILE = SLQFunnyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.songliquan.github.SLQFunnyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLQFunnyDemo.app/SLQFunnyDemo";
+			};
+			name = Debug;
+		};
+		E4C87AA01E6949A400ACA1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L76K5AFQYD;
+				INFOPLIST_FILE = SLQFunnyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.songliquan.github.SLQFunnyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLQFunnyDemo.app/SLQFunnyDemo";
+			};
+			name = Release;
+		};
+		E4C87AA21E6949A400ACA1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L76K5AFQYD;
+				INFOPLIST_FILE = SLQFunnyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.songliquan.github.SLQFunnyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SLQFunnyDemo;
+			};
+			name = Debug;
+		};
+		E4C87AA31E6949A400ACA1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L76K5AFQYD;
+				INFOPLIST_FILE = SLQFunnyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.songliquan.github.SLQFunnyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SLQFunnyDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4C87A661E6949A300ACA1E4 /* Build configuration list for PBXProject "SLQFunnyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C87A991E6949A400ACA1E4 /* Debug */,
+				E4C87A9A1E6949A400ACA1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4C87A9B1E6949A400ACA1E4 /* Build configuration list for PBXNativeTarget "SLQFunnyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C87A9C1E6949A400ACA1E4 /* Debug */,
+				E4C87A9D1E6949A400ACA1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4C87A9E1E6949A400ACA1E4 /* Build configuration list for PBXNativeTarget "SLQFunnyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C87A9F1E6949A400ACA1E4 /* Debug */,
+				E4C87AA01E6949A400ACA1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4C87AA11E6949A400ACA1E4 /* Build configuration list for PBXNativeTarget "SLQFunnyDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C87AA21E6949A400ACA1E4 /* Debug */,
+				E4C87AA31E6949A400ACA1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E4C87A7A1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E4C87A7B1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodel */,
+			);
+			currentVersion = E4C87A7B1E6949A400ACA1E4 /* SLQFunnyDemo.xcdatamodel */;
+			path = SLQFunnyDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E4C87A631E6949A300ACA1E4 /* Project object */;
+}
