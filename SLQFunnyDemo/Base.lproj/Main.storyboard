@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3i3-Rw-xuF">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YrQ-Z0-v1J">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--犯罪记录-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="犯罪记录" id="BYZ-38-t0r" customClass="SLQAskNoteViewController" sceneMemberID="viewController">
+                <viewController title="犯罪记录" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="SLQCoreMotionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,13 +20,98 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xgw-26-mEd">
+                                <rect key="frame" x="16" y="64" width="349" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Cdq-wv-WCk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mQi-Dm-Eht">
+                                <rect key="frame" x="16" y="284" width="349" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l3K-3a-8XA">
+                                <rect key="frame" x="16" y="504" width="349" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.60392156860000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mQi-Dm-Eht" firstAttribute="height" secondItem="Xgw-26-mEd" secondAttribute="height" id="AIg-kP-VVs"/>
+                            <constraint firstItem="Xgw-26-mEd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="M3q-Kp-Jm8"/>
+                            <constraint firstItem="mQi-Dm-Eht" firstAttribute="trailing" secondItem="Xgw-26-mEd" secondAttribute="trailing" id="N45-vP-e19"/>
+                            <constraint firstItem="l3K-3a-8XA" firstAttribute="trailing" secondItem="Xgw-26-mEd" secondAttribute="trailing" id="Oad-XN-uon"/>
+                            <constraint firstAttribute="trailing" secondItem="Xgw-26-mEd" secondAttribute="trailing" constant="10" id="Y8Y-95-AEw"/>
+                            <constraint firstItem="l3K-3a-8XA" firstAttribute="top" secondItem="mQi-Dm-Eht" secondAttribute="bottom" constant="20" id="jWf-DV-Lfs"/>
+                            <constraint firstItem="l3K-3a-8XA" firstAttribute="height" secondItem="Xgw-26-mEd" secondAttribute="height" id="nfv-iO-HFx"/>
+                            <constraint firstItem="l3K-3a-8XA" firstAttribute="leading" secondItem="Xgw-26-mEd" secondAttribute="leading" id="pLA-E3-rGk"/>
+                            <constraint firstItem="Xgw-26-mEd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="qVb-Fo-TUT"/>
+                            <constraint firstItem="mQi-Dm-Eht" firstAttribute="leading" secondItem="Xgw-26-mEd" secondAttribute="leading" id="s8R-co-3i3"/>
+                            <constraint firstItem="mQi-Dm-Eht" firstAttribute="top" secondItem="Xgw-26-mEd" secondAttribute="bottom" constant="20" id="tLL-Xc-NQm"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pcb-Qr-hoo"/>
+                    <navigationItem key="navigationItem" id="pcb-Qr-hoo">
+                        <barButtonItem key="rightBarButtonItem" title="跳转到地图" id="GZk-o1-Z9D">
+                            <connections>
+                                <segue destination="YrQ-Z0-v1J" kind="push" id="6SJ-0r-8nq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="Xgw-26-mEd" id="wgh-FF-VBb"/>
+                        <outlet property="textView2" destination="mQi-Dm-Eht" id="rvt-Kn-t5W"/>
+                        <outlet property="textView3" destination="l3K-3a-8XA" id="8CF-Vs-xLn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="161"/>
+            <point key="canvasLocation" x="613.60000000000002" y="160.56971514242881"/>
+        </scene>
+        <!--地图打点测试-->
+        <scene sceneID="2aW-Kd-xRs">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="YrQ-Z0-v1J" customClass="SLQAddressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nFv-36-8Wp"/>
+                        <viewControllerLayoutGuide type="bottom" id="9I1-Rr-bKI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mqh-NO-A03">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="ss1111" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e3B-f2-Vuo">
+                                <rect key="frame" x="10" y="64" width="355" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="dQS-ho-Z0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.28264685280000001" blue="0.2285836617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e3B-f2-Vuo" secondAttribute="trailing" constant="10" id="6zU-Og-9Hx"/>
+                            <constraint firstItem="e3B-f2-Vuo" firstAttribute="leading" secondItem="mqh-NO-A03" secondAttribute="leading" constant="10" id="lp9-1c-SV8"/>
+                            <constraint firstItem="e3B-f2-Vuo" firstAttribute="top" secondItem="nFv-36-8Wp" secondAttribute="bottom" id="tO9-PK-z5M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="地图打点测试" id="Qjr-Ky-evI"/>
+                    <connections>
+                        <outlet property="textView" destination="e3B-f2-Vuo" id="cUO-zg-uhw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eV8-Tz-lNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536.8" y="160.56971514242881"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="POa-pD-x4m">
