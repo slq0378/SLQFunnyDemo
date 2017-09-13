@@ -11,7 +11,14 @@
 #import "SLQPrecompile.h"
 #import <CoreText/CoreText.h>
 @implementation SLQAskAndAnswerCell
-
++ (void )initialize {
+    [super initialize];
+    NSLog(@"SLQAskAndAnswerCell-initialize");
+}
++ (void)load {
+    [super load];
+    NSLog(@"SLQAskAndAnswerCell-load");
+}
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         

@@ -15,8 +15,34 @@
 @implementation AppDelegate
 
 
++ (void )initialize {
+    [super initialize];
+    NSLog(@"AppDelegate-");
+}
++ (void)load {
+    [super load];
+    NSLog(@"AppDelegate-load");
+}
 
++ (instancetype)alloc {
+    
+    NSLog(@"AppDelegate-alloc");
+    return [super alloc];
+    
+}
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    NSLog(@"AppDelegate-allocWithZone");
+    return [super allocWithZone:zone];
+}
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        // Initialize self
+        NSLog(@"AppDelegate-init");
+    }
+    return self;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;

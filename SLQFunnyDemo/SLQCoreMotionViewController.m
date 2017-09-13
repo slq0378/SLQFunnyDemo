@@ -25,7 +25,20 @@
 @end
 
 @implementation SLQCoreMotionViewController
-
++ (void )initialize {
+    [super initialize];
+    NSLog(@"SLQCoreMotionViewController-initialize");
+}
++ (void)load {
+    [super load];
+    NSLog(@"SLQCoreMotionViewController-load");
+}
++ (instancetype)alloc {
+    
+    NSLog(@"SLQCoreMotionViewController-alloc");
+    return [super alloc];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
